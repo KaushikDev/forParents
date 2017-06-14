@@ -1,0 +1,163 @@
+<html>
+<head>
+
+<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css" />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" >
+
+
+<script  type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+<script  type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+
+
+   <script>
+     $(document).ready(function(){
+	 
+	 $("img").addClass("animated swing");
+	 
+	 });
+   </script>
+</head>
+<body onload="init()">
+<style>
+.margin{
+margin-top:10px;
+margin-bottom:15px;
+}
+
+.heading, p{
+font-family:Lobster;
+font-size:75px;
+color:red;
+}
+
+.background{
+background-color:#808080;
+}
+
+
+.image{
+border-width:2px;
+border-style:solid;
+border-color:black;
+border-radius:50px;
+margin: 0 auto;
+}
+
+
+button{
+margin-top:10px;
+margin-bottom:10px;
+font-size:25px;
+font-family:Lobster;
+
+}
+
+</style>
+
+<div class="container-fluid">
+
+  <div class="row">
+    <div class="col-xs-12">
+    <h1 class="text-center heading">A Tribute to my parents</h1>
+  </div>
+   </div>
+  
+   <div class="row">
+     <div class="col-xs-12">
+     <img src="http://www.law.harvard.edu/students/dean/family.jpg" class="img-responsive margin image">
+     </div>
+   </div>
+
+    <div class="row">
+    <div class="col-xs-12">
+    <h3 class="text-center"  style="color:blue ; font-size:30px">Here is a tribute to my parents, who have always been most supportive and most loving. <b>Thanks mom and dad.</b><h1>
+  </div>
+   </div>
+   
+   
+   
+   <div  class="row">
+     <div class="col-xs-12" style="color:Green ; font-size:35px">
+	 <ul>
+	   <li><b>1985 : </b>You got married. Yippiee. :)</li>
+	   <li><b>1988 : </b>I was born. Woohooo :D</li>
+	   <li><b>2001 : </b>We got our new home. :-* </li>
+	   <li><b>2010 : </b>Your 25th marriage anniversary. Awesomeness redefined. :B</li>
+	   <li><b>2011 : </b>You encouraged me go out and make a career for myself. Thanks :*</li>
+	   <li><b>Forever : </b>We will be together and may the Dear God, give both of you tremendous peace, love and health. I LOVE YOU MOM and DAD. :*</li>
+	 </ul>
+	 </div>
+   </div>
+   
+   
+   <div class="row margin">
+    <div class="col-xs-12">
+    <h3 class="text-center"  style="color:blue ; font-size:30px">Here is a little <a href="https://www.youtube.com/watch?v=2eJvS_YPnWc" target="_blank" style="color:Brown"><b>video</b> </a>for you both. <h1>
+  </div>
+   </div>
+   
+
+
+   <div class="row margin text-center">
+       
+        <div class="col-xs-12">
+      
+		
+       	<button  class="btn" id="fb"  style="background-color:transparent"><a href="https://www.facebook.com/sharer/sharer.php?u=https://codepen.io/Kaushik02/full/jqPKRg/" target="_blank">
+        <i class="fa fa-facebook" aria-hidden="true" style="color:blue;font-size:45px;font-weight:bold;"></i>
+        </a></button>
+		<button class="btn" id="whatsapp"  style="background-color:transparent"><a href="whatsapp://send?text=https://codepen.io/Kaushik02/full/jqPKRg/">
+		<i class="fa fa-whatsapp" aria-hidden="true" style="color:Green;font-size:45px;font-weight:bold;"></i>
+		</a></button>
+        <button class="btn" id="ghost" style="background-color:transparent;font-size:40px;" onclick="setMood()"></button>
+	   </div>
+       
+        </div>
+		
+		<div class="row text-center" style="margin-top:10px;">
+<div class="col-xs-12">
+<p style="font-weight:bold;color:red;font-size:25px"><i class="fa fa-copyright" aria-hidden="true"></i>KaushikCodeArts : App by Piyush Kaushik</p>
+</div>
+</div>
+
+</div>
+<script>
+
+var liked =    '<i class="fa fa-thumbs-up" aria-hidden="true" style="color:blue;font-size:60px;font-weight:bold;"></i>';
+var unliked = '<i class="fa fa-thumbs-down" aria-hidden="true" style="color:red;font-size:60px;font-weight:bold;"></i>'
+var none = '<i class="fa fa-thumbs-o-up" aria-hidden="true"></i>';
+
+function init(){
+document.getElementById("ghost").innerHTML=none;
+}
+
+function setMood(){
+var elem=document.getElementById("ghost").innerHTML;
+if(elem===none){
+likes();
+ 
+}
+else if(elem===liked){
+dislikes();
+ 
+}
+else if(elem===unliked){
+likes();
+ 
+}
+
+}
+
+
+
+ function likes(){
+ document.getElementById("ghost").innerHTML=liked;
+  }
+ 
+ function dislikes(){
+  document.getElementById("ghost").innerHTML=unliked;
+  } 
+ 
+</script>
+</body>
