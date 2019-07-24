@@ -1,2 +1,2 @@
 # tribute
-A short tribute to my hero
+A short tribute to Elon Musk
