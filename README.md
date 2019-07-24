@@ -1,2 +1,2 @@
-# forParents
-A short tribute to my parents
+# tribute
+A short tribute to my hero
