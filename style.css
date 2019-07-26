@@ -1,0 +1,129 @@
+body{
+    line-height: 1.5;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#title{
+    text-align: center;
+    text-shadow: 2px 2px 2px gray;
+}
+
+/* A grid of two columns */
+#img-div, #timeline-events{
+    background: #00ddff;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 5px;
+    display: grid;  
+    grid-template-columns: 50% 50%;
+}
+
+/* First column in the grid and only item in this grid column. */
+#img-div #image{
+    margin: 0;
+    max-width: 100%;
+    border: 2px white solid;
+    border-radius: 5px;
+    justify-self: center;
+    align-self: center;
+}
+
+#img-div #img-caption{
+    justify-self: center;
+    align-self: center;
+}
+
+
+#tribute-info{
+    text-align: center;
+    font-size: 1em;
+}
+
+#achievements{
+    background: #00ddff;
+    padding: 10px;
+    margin: 50px;
+    border-radius: 5px;
+    grid-template-columns: 90%;
+}
+
+
+#timeline-events #timeline, #timeline-events #life{
+   width: 90%;
+}
+
+#timeline-events #timeline #heading-timeline, #timeline-events #life #heading-life, #achievements #heading-achievements{
+    background: yellow;
+    text-align: center;
+    height: 50px;
+    border-radius : 5px;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px gray;
+}
+
+#timeline-events #timeline #events-list, #achievements #achievements-list{
+line-height: 2.5;
+}
+
+
+
+@media (max-width: 800px){
+
+#img-div, #timeline-events, #achievements{
+    background: #00ddff;
+    padding: 5px;
+    margin: 20px;
+    border-radius: 5px;
+    display: block;
+}
+
+
+
+/* First column in the grid and only item in this grid column. */
+#img-div #image{
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: auto;
+    border: 2px white solid;
+    border-radius: 5px;
+   
+   }
+
+#img-div #img-caption{
+    display: block;
+    text-align: center;
+}
+
+
+#tribute-info{
+    text-align: center;
+    font-size: 1em;
+}
+
+#timeline-events #timeline, #timeline-events #life{
+    display: block;
+    margin: auto;
+    
+}
+
+#timeline-events #timeline #heading-timeline, #timeline-events #life #heading-life, #achievements #heading-achievements{
+    
+    background: yellow;
+    text-align: center;
+    height: 50px;
+    border-radius : 5px;
+    font-size: 2em;
+    text-shadow: 2px 2px 2px gray;
+}
+
+#timeline-events #timeline #events-list, #achievements #achievements-list{
+line-height: 1.5;
+}
+
+
+
+
+
+}

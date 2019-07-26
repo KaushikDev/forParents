@@ -1,125 +1,124 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<link href="https://fonts.googleapis.com/css?family=Lobster" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/css/bootstrap.min.css" />
-    <link rel="stylesheet" href="font-awesome-4.7.0/font-awesome-4.7.0/css/font-awesome.min.css">
-    <script src="jquery-3.2.1.min.js"></script>
-    <script src="bootstrap-3.3.7-dist/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
-
-
-   <script>
-     $(document).ready(function(){
-	 
-	 $("img").addClass("animated swing");
-	 
-	 });
-   </script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Tribute</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body onload="init()">
-<style>
-.margin{
-margin-top:10px;
-margin-bottom:15px;
-}
+<body>
+  <div id="main">
+    <h1 id="title">Elon Reeve Musk</h1>
+    
+    
+      <div id="img-div">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ed/Elon_Musk_Royal_Society.jpg/330px-Elon_Musk_Royal_Society.jpg" alt="Elon Musk Image" id="image">
+         
+          <div id="img-caption">
+            <p id="img-caption-para">
+                Elon Reeve Musk (born June 28, 1971) is a technology entrepreneur, investor, and engineer.He holds South African, Canadian, and U.S. citizenship and is the founder, CEO, and lead designer of SpaceX; co-founder, CEO, and product architect of Tesla, Inc.; co-founder and CEO of Neuralink; founder of The Boring Company; co-founder and co-chairman of OpenAI; and co-founder of PayPal. In December 2016, he was ranked 21st on the Forbes list of The World's Most Powerful People. He has a net worth of $22.3 billion and is listed by Forbes as the 40th-richest person in the world.
+            </p>
+            
 
-.heading, p{
-font-family:Lobster;
-font-size:75px;
-color:red;
-}
+            <p id="musk-quote">
+              <em>"When something is important enough, you do it even if the odds are not in your favor."</em>
+              <br>--Elon Musk
+            </p>
+           
+            <p id="tribute-info">Read more about Elon Musk on <a id="tribute-link" href="https://en.wikipedia.org/wiki/Elon_Musk" target="_blank">wikipedia</a>.</p>
+          </div>
+          
 
-.background{
-background-color:#808080;
-}
-
-
-.image{
-border-width:2px;
-border-style:solid;
-border-color:black;
-border-radius:50px;
-margin: 0 auto;
-}
-
-
-button{
-margin-top:10px;
-margin-bottom:10px;
-font-size:25px;
-font-family:Lobster;
-
-}
-
-</style>
-
-<div class="container-fluid">
-
-  <div class="row">
-    <div class="col-xs-12">
-    <h1 class="text-center heading">A Tribute to my parents</h1>
-  </div>
-   </div>
-  
-   <div class="row">
-     <div class="col-xs-12">
-     <img src="http://www.law.harvard.edu/students/dean/family.jpg" class="img-responsive margin image">
-     </div>
-   </div>
-
-    <div class="row">
-    <div class="col-xs-12">
-    <h3 class="text-center"  style="color:blue ; font-size:30px">Here is a tribute to my parents, who have always been most supportive and most loving. <b>Thanks mom and dad.</b><h1>
-  </div>
-   </div>
-   
-   
-   
-   <div  class="row">
-     <div class="col-xs-12" style="color:Green ; font-size:35px">
-	 <ul>
-	   <li><b>1985 : </b>You got married. Yippiee. :)</li>
-	   <li><b>1988 : </b>I was born. Woohooo :D</li>
-	   <li><b>2001 : </b>We got our new home. :-* </li>
-	   <li><b>2010 : </b>Your 25th marriage anniversary. Awesomeness redefined. :B</li>
-	   <li><b>2011 : </b>You encouraged me to go out and make a career for myself. Thanks :*</li>
-	   <li><b>Forever : </b>We will be together and may the Dear God, give both of you tremendous peace, love and health. I LOVE YOU MOM and DAD. :*</li>
-	 </ul>
-	 </div>
-   </div>
-   
-   
-   <div class="row margin">
-    <div class="col-xs-12">
-    <h3 class="text-center"  style="color:blue ; font-size:30px">Here is a little <a href="https://www.youtube.com/watch?v=2eJvS_YPnWc" target="_blank" style="color:Brown"><b>video</b> </a>for you both. <h1>
-  </div>
-   </div>
-   
-
-
-   <div class="row margin text-center">
-       
-        <div class="col-xs-12">
+      </div>
       
-		
-       	<button  class="btn" id="fb"  style="background-color:transparent"><a href="https://www.facebook.com/sharer/sharer.php?u=https://KaushikDev.github.io/forParents" target="_blank">
-        <i class="fa fa-facebook" aria-hidden="true" style="color:black;font-size:45px;font-weight:bold;"></i>
-        </a></button>
-		<button class="btn" id="whatsapp"  style="background-color:transparent"><a href="whatsapp://send?text=https://KaushikDev.github.io/forParents">
-		<i class="fa fa-whatsapp" aria-hidden="true" style="color:black;font-size:45px;font-weight:bold;"></i>
-		</a></button>
-        <button class="btn" id="ghost" style="background-color:transparent;font-size:40px;" onclick="setMood()"></button>
-	   </div>
-       
-        </div>
-		
-		<div class="row text-center" style="margin-top:10px;">
-<div class="col-xs-12">
-<a href="https://kaushikdev.github.io/portfolio/" target="_blank" style="color:black;"><i class="fa fa-copyright" aria-hidden="true" style="color:red;font-size:15px;"></i>KaushikCodeArts 2018</a>
-</div>
-</div>
+      
 
-</div>
-<script src="logic.js">
-</script>
+   
+
+      <div id="timeline-events">
+        <div id="timeline">
+          <div id="heading-timeline">
+            TIMELINE
+          </div>
+          <ul id="events-list">
+            <li><strong>1971 : </strong>Musk was born in Pretoria, Transvaal, South Africa.</li>
+            <li><strong>1989 : </strong>Elon Musk moved to Canada to attend Queen's University.</li>
+            <li><strong>1995 : </strong>Musk and his brother, Kimbal, started Zip2, a web software company.</li>
+            <li><strong>1999 : </strong>Musk co-founded X.com, an online financial services and e-mail payment company.</li>
+            <li><strong>2000 : </strong>X.com merged with Confinity.</li>
+            <li><strong>2001 : </strong>Merged company was renamed as PayPal.</li>
+            <li><strong>2002 : </strong>Musk founded Space Exploration Technologies, or SpaceX.</li>
+            <li><strong>2004 : </strong>Musk led the Series A round of investment, joining Tesla's board of directors as its chairman.</li>
+            <li><strong>2008 : </strong>Tesla Motors first built an electric sports car, the Tesla Roadster.</li>
+            <li><strong>2012 : </strong>Tesla began delivery of its four-door Model S sedan.</li> 
+            <li><strong>2013 : </strong>Musk unveiled a concept for a high-speed transportation system incorporating reduced-pressure tubes in which pressurized capsules ride on an air cushion driven by linear induction motors and air compressors. This came to be known as Hyperloop.</li> 
+            <li><strong>2015 : </strong>Musk announced the creation of OpenAI, a not-for-profit artificial intelligence (AI) research company.</li> 
+            <li><strong>2016 : </strong>Musk co-founded Neuralink, a neurotechnology startup company to integrate the human brain with artificial intelligence. </li> 
+            <li><strong>2016 : </strong>Musk tweeted "[I] am going to build a tunnel boring machine and just start digging ..." The company was named 'The Boring Company'.</li> 
+            <li><strong>2018 : </strong>Musk attempted to provide assistance to rescuers during the Tham Luang cave rescue by ordering his employees to build a small rescue pod.</li> 
+            <li><strong>2018 : </strong>Musk first mentioned Teslaquila in an April Fools tweet in 2018.[203] The proposed Tesla-branded tequila become closer to a reality in October 2018 as Tesla filed an 'intent to use' trademark application with the U.S. Patent and Trademark Office.</li> 
+            <li><strong>2019 : </strong>Musk released a rap single to SoundCloud under the username "Emo G Records". Titled "RIP Harambe"</li> 
+
+           </ul>
+        </div>
+
+        <div id="life">
+            <div id="heading-life">
+                LIFE 
+              </div>
+              <h3>Philanthropy</h3>
+              <p>Musk is chairman of the Musk Foundation, which focuses its philanthropic efforts on providing solar-power energy systems in disaster areas. In 2010, the Musk Foundation collaborated with SolarCity to donate a 25-kW solar power system to the South Bay Community Alliance's hurricane response center in Coden, Alabama. In July 2011, the Musk Foundation donated US$250,000 towards a solar power project in Sōma, Japan, a city that had been recently devastated by a tsunami.</p>
+              <hr>
+              <h3>Family</h3>
+              <p>Tosca Musk, Elon's sister, is a filmmaker. She is the founder of Musk Entertainment and has produced various movies.[270]
+                  <br>
+                  Musk met his first wife, Canadian author Justine Wilson at Ontario's Queen's University. They married in 2000 and separated in 2008. Their first son, Nevada Alexander Musk, died of sudden infant death syndrome (SIDS) at the age of 10 weeks. They later had five sons through in vitro fertilization – twins in 2004, followed by triplets in 2006. They share custody of all five sons.
+                  <br>
+                  In 2008, Musk began dating English actress Talulah Riley, and in 2010, the couple married. In January 2012, Musk announced that he had ended his four-year relationship with Riley. In July 2013, Musk and Riley remarried. In December 2014, Musk filed for a second divorce from Riley; however, the action was withdrawn. The divorce was finalized in late 2016.
+                  Musk began dating American actress Amber Heard in 2016 but the two split up after one year due to their conflicting schedules.On May 7, 2018, Musk and Canadian musician Grimes revealed that they had begun dating</p>
+              <hr>
+              <h3>In popular media</h3>
+              <p>In Iron Man 2 (2010), Musk met Tony Stark (Robert Downey Jr.) in a restaurant, and had some brief lines regarding an "idea for an electric jet." In January 2015, Musk made a guest appearance playing himself on The Simpsons in an episode titled "The Musk Who Fell to Earth"; the episode poked fun at many of Musk's ideas. In November 2015, Musk appeared in an episode of The Big Bang Theory, playing himself, volunteering at a soup kitchen with Wolowitz. Musk was featured in the 2015 environmental documentary Racing Extinction, in which a custom Tesla Model S was designed to help project images of critically endangered species onto public buildings, including the Empire State Building and the Vatican. In 2016, Musk appeared as himself in the romantic comedy film Why Him? where he was briefly met by one of the main characters, Ned Flemming played by Bryan Cranston, in a bar at a party. In December 2016, Robby in New Girl refers to saving a life, and when asked who, responds "Do you know who Elon Musk is?". Also in 2016, Musk was referenced by Dr. Martin Stein on The CW time-travel TV show DC's Legends of Tomorrow. During time travel to the past, Stein meets his younger self and introduced himself as Elon Musk, to disguise his own identity.
+                <br>
+                  In October 2017, Musk was mentioned as a historic pioneer on the CBS All Access series Star Trek: Discovery. Set in the year 2256, Captain Gabriel Lorca attempts to motivate a scientist on his ship by asking him "How do you want to be remembered in history? Alongside the Wright Brothers, Elon Musk, Zefram Cochrane? Or as a failed fungus expert. Musk is significantly referenced numerous times in Hat Films' 2017 album, Neon Musk.In November 2017, Musk appeared as himself in season 1, episode 6 of The Big Bang Theory spin-off prequel series Young Sheldon. The successful first landing of a SpaceX Falcon 9 first stage on a drone ship on April 8, 2016, is shown being covered by CNN. This is followed by a scene where Musk is shown alone in his office reading the notebook that young Sheldon mailed NASA in 1989 (a scene shown earlier in the episode) containing calculations detailing how this feat could be accomplished. In February 2019, Musk co-hosted YouTuber PewDiePie's show "Meme Review" with Justin Roiland under the request of PewDiePie's fans.</p>
+              
+              
+        </div>
+
+      </div>
+    
+      <div id="achievements">
+          <div id="heading-achievements">
+              ACHIEVEMENTS
+            </div>
+            <ul id="achievements-list">
+              <li>In 2006, Musk served as a member of the United States National Academy of Sciences Aeronautics and Space Engineering Board.</li>
+              <li>Inc Magazine Entrepreneur of the Year award for 2007 for his work on Tesla and SpaceX.</li>
+              <li>2007 Index Design award for his design of the Tesla Roadster. Global Green 2006 product design award for his design of the Tesla Roadster, presented by Mikhail Gorbachev.</li>
+              <li>American Institute of Aeronautics and Astronautics George Low award for the most outstanding contribution in the field of space transportation in 2007/2008. Musk was recognized for his design of the Falcon 1, the first privately developed liquid-fuel rocket to reach orbit.</li>
+              <li>National Wildlife Federation 2008 National Conservation Achievement award for Tesla and SolarCity. Other 2008 recipients include journalist Thomas Friedman, U.S. Senator Patrick Leahy (D-VT), and Florida Governor Charlie Crist.</li>
+              <li>National Space Society's Von Braun Trophy in 2008/2009, given for leadership of the most significant achievement in space.</li>
+              <li>Listed as one of Time's 100 people who most affected the world in 2010.</li>
+              <li>The world governing body for aerospace records, Fédération Aéronautique Internationale, presented Musk in 2010 with the highest award in air and space, the FAI Gold Space Medal, for designing the first privately developed rocket to reach orbit.</li>
+              <li>Named as one of the 75 most influential people of the 21st century by Esquire magazine.</li>
+              <li>Recognized as a Living Legend of Aviation in 2010 by the Kitty Hawk Foundation for creating the successor to the Space Shuttle (Falcon 9 rocket and Dragon spacecraft). </li>
+              <li>In February 2011, Forbes listed Musk as one of "America's 20 Most Powerful CEOs 40 And Under."</li>
+              <li>In June 2011, Musk was awarded the US$250,000 Heinlein Prize for Advances in Space Commercialization.</li>
+               <li>In 2012, Musk was awarded the Royal Aeronautical Society's highest award: a Gold Medal.</li>
+              <li>In 2013, Musk was named the Fortune Businessperson of the year for SpaceX, SolarCity, and Tesla.</li>
+              <li>Awarded the President's award for Exploration and Technology of the Explorers Club at the annual gala on the 16th of March 2014.</li>
+              <li>In 2015, he was awarded IEEE Honorary Membership.</li>
+              <li>In June 2016, Business Insider named Musk one of the "Top 10 Business Visionaries Creating Value for the World" along with Mark Zuckerberg and Sal Khan.</li>
+              <li>In December 2016, Musk was ranked 21st on Forbes list of The World's Most Powerful People.</li>
+              <li>In May 2017, Musk was awarded the Oslo Business for Peace Award.</li>
+              <li>Musk was elected a Fellow of the Royal Society (FRS) in 2018.</li>
+              <li>Musk was awarded as member (fifth class) of the Most Admirable Order of the Direkgunabhorn in 4 March 2019 for involving in the rescue at Tham Luang cave, Chiang Rai Province, Thailand.</li>
+           
+
+            </ul>
+      </div>
+  
+  </div>
 </body>
+</html>
